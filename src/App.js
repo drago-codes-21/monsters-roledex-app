@@ -11,14 +11,14 @@ export default class App extends Component {
     };
   }
   componentDidMount() {
-    fetch("https://jsonplaceholder.typicode.com/users")
+    fetch("https://jsonplaceholder.typicode.com/comments")
       .then((response) => response.json())
       .then((users) => this.setState({ monsters: users }));
   }
   render() {
     const { monsters, searchFeild } = this.state;
     const filteredMonsters = monsters.filter((monster) =>
-      monster.name.toLowerCase().includes(searchFeild.toLowerCase())
+      monster.email.toLowerCase().includes(searchFeild.toLowerCase())
     );
 
     return (

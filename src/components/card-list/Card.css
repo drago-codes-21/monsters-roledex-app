@@ -37,13 +37,13 @@
   background-color: #95dada;
   border: 1px solid gray;
   border-radius: 5px;
-  padding: 25px;
+  padding: 5px;
   transform: translateZ(0);
   transition: transform 0.25s ease-in-out;
   cursor: pointer;
   backface-visibility: hidden;
 }
 .card-container:hover {
-  transform: scale(1.05);
+  transform: scale(1.09);
   /* background-color: var(--clr-primary-8); */
 }
